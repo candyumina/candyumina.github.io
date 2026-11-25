@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>男生78怒怼生91_锐评短视频社区|敢说真话的观点平台</title>
+<meta name="description" content="男生78怒怼生91是一家专注锐评与观点表达的视频品牌，用真实、锋利又克制的内容记录年轻人的态度，汇聚创作者与观众的持续对话。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0a0c10;
+--bg2:#11151c;
+--panel:#161b24;
+--line:#232b38;
+--txt:#e6ebf2;
+--sub:#8b97a8;
+--accent:#ff3b5c;
+--accent2:#ffb03a;
+--cool:#38bdf8;
+--radius:14px;
+}
+html{scroll-behavior:smooth}
+body{
+background:var(--bg);
+color:var(--txt);
+font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+line-height:1.7;
+overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* ---------- NAV ---------- */
+header.nav{
+position:fixed;top:0;left:0;right:0;z-index:100;
+background:rgba(10,12,16,.82);
+backdrop-filter:blur(14px);
+border-bottom:1px solid var(--line);
+transition:all .3s;
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px}
+.logo .mark{
+width:34px;height:34px;border-radius:9px;
+background:linear-gradient(135deg,var(--accent),var(--accent2));
+display:grid;place-items:center;font-size:16px;color:#0a0c10;font-weight:900;
+box-shadow:0 4px 16px rgba(255,59,92,.35);
+}
+.nav-links{display:flex;gap:30px;font-size:14.5px;color:var(--sub)}
+.nav-links a{transition:color .2s;position:relative}
+.nav-links a:hover{color:var(--txt)}
+.nav-links a::after{
+content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;
+background:var(--accent);transition:width .25s;
+}
+.nav-links a:hover::after{width:100%}
+.nav-cta{
+background:var(--accent);color:#fff;padding:9px 22px;border-radius:99px;
+font-size:14px;font-weight:600;transition:transform .2s,box-shadow .2s;
+box-shadow:0 4px 18px rgba(255,59,92,.3);
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(255,59,92,.45)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:24px;height:2px;background:var(--txt);border-radius:2px}
+
+/* ---------- HERO ---------- */
+.hero{
+position:relative;
+padding:150px 0 90px;
+overflow:hidden;
+background:
+radial-gradient(900px 500px at 78% -8%,rgba(255,59,92,.16),transparent 60%),
+radial-gradient(700px 420px at 8% 12%,rgba(56,189,248,.13),transparent 60%),
+var(--bg);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.eyebrow{
+display:inline-flex;align-items:center;gap:8px;
+font-size:13px;color:var(--accent2);letter-spacing:2px;font-weight:600;
+border:1px solid rgba(255,176,58,.35);padding:6px 14px;border-radius:99px;
+margin-bottom:26px;background:rgba(255,176,58,.06);
+}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--accent2);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+h1.brand{
+font-size:clamp(40px,6vw,74px);
+line-height:1.08;
+font-weight:900;
+letter-spacing:-1.5px;
+margin-bottom:22px;
+background:linear-gradient(120deg,#fff 20%,#ffb03a 55%,#ff3b5c 85%);
+-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero p.lead{
+font-size:17px;color:var(--sub);max-width:520px;margin-bottom:34px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.btn{
+display:inline-flex;align-items:center;gap:8px;
+padding:13px 28px;border-radius:99px;font-size:15px;font-weight:600;
+transition:all .22s;cursor:pointer;border:none;
+}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 24px rgba(255,59,92,.38)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(255,59,92,.55)}
+.btn-ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--sub);background:var(--panel)}
+.hero-stats{display:flex;gap:44px;flex-wrap:wrap}
+.hero-stats .s .num{font-size:30px;font-weight:800;color:var(--txt);letter-spacing:-.5px}
+.hero-stats .s .num em{color:var(--accent);font-style:normal;font-size:19px}
+.hero-stats .s .lbl{font-size:13px;color:var(--sub);margin-top:2px}
+
+/* hero visual */
+.hero-visual{position:relative}
+.screen{
+position:relative;
+border-radius:20px;
+overflow:hidden;
+border:1px solid var(--line);
+background:linear-gradient(160deg,#1b2230,#0d1118);
+box-shadow:0 30px 80px rgba(0,0,0,.6);
+aspect-ratio:4/3.4;
+}
+.screen-svg{width:100%;height:100%}
+.play-badge{
+position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+width:74px;height:74px;border-radius:50%;
+background:rgba(255,59,92,.92);
+display:grid;place-items:center;
+box-shadow:0 0 0 0 rgba(255,59,92,.6);
+animation:ripple 2.4s infinite;
+cursor:pointer;
+}
+@keyframes ripple{
+0%{box-shadow:0 0 0 0 rgba(255,59,92,.55)}
+70%{box-shadow:0 0 0 26px rgba(255,59,92,0)}
+100%{box-shadow:0 0 0 0 rgba(255,59,92,0)}
+}
+.play-badge svg{width:26px;height:26px;margin-left:4px}
+.live-tag{
+position:absolute;top:14px;left:14px;
+display:flex;align-items:center;gap:6px;
+background:rgba(10,12,16,.75);border:1px solid var(--line);
+padding:5px 12px;border-radius:99px;font-size:12px;color:var(--txt);font-weight:600;
+}
+.live-tag i{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 1.2s infinite}
+.time-code{
+position:absolute;bottom:14px;right:14px;
+background:rgba(10,12,16,.8);padding:4px 10px;border-radius:8px;
+font-size:12px;color:var(--sub);font-family:monospace;
+}
+.floating-card{
+position:absolute;right:-18px;bottom:-26px;
+background:var(--panel);border:1px solid var(--line);
+border-radius:14px;padding:14px 18px;
+box-shadow:0 18px 50px rgba(0,0,0,.55);
+display:flex;align-items:center;gap:12px;
+}
+.floating-card .fc-ic{
+width:40px;height:40px;border-radius:10px;
+background:rgba(56,189,248,.14);display:grid;place-items:center;
+}
+.floating-card .fc-txt strong{display:block;font-size:14.5px}
+.floating-card .fc-txt span{font-size:12px;color:var(--sub)}
+
+/* ---------- MARQUEE ---------- */
+.marquee-bar{
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+background:var(--bg2);
+padding:16px 0;overflow:hidden;white-space:nowrap;
+}
+.marquee-track{display:inline-flex;gap:48px;animation:scroll 34s linear infinite}
+.marquee-track span{
+font-size:14px;color:var(--sub);letter-spacing:2px;font-weight:500;
+display:inline-flex;align-items:center;gap:48px;
+}
+.marquee-track span::after{content:"◆";color:var(--accent);font-size:9px}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- SECTION COMMON ---------- */
+section{padding:96px 0}
+.sec-head{margin-bottom:52px;max-width:680px}
+.sec-head .tag{
+display:inline-block;font-size:12.5px;letter-spacing:3px;color:var(--accent);
+font-weight:700;text-transform:uppercase;margin-bottom:14px;
+}
+.sec-head h2{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-1px;line-height:1.2;margin-bottom:16px}
+.sec-head p{color:var(--sub);font-size:16px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+
+/* ---------- FEATURES ---------- */
+.features{background:var(--bg2)}
+.f-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.f-card{
+background:var(--panel);border:1px solid var(--line);
+border-radius:var(--radius);padding:32px 28px;
+transition:transform .3s,border-color .3s,box-shadow .3s;
+position:relative;overflow:hidden;
+}
+.f-card::before{
+content:"";position:absolute;inset:0;
+background:linear-gradient(140deg,rgba(255,59,92,.09),transparent 55%);
+opacity:0;transition:opacity .3s;
+}
+.f-card:hover{transform:translateY(-6px);border-color:rgba(255,59,92,.38);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.f-card:hover::before{opacity:1}
+.f-ic{
+width:52px;height:52px;border-radius:13px;
+display:grid;place-items:center;margin-bottom:22px;
+background:linear-gradient(135deg,rgba(255,59,92,.18),rgba(255,176,58,.12));
+border:1px solid rgba(255,59,92,.2);
+position:relative;z-index:1;
+}
+.f-card h3{font-size:19px;margin-bottom:10px;position:relative;z-index:1}
+.f-card p{color:var(--sub);font-size:14.5px;position:relative;z-index:1}
+
+/* ---------- SHOWS ---------- */
+.shows-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.show-card{
+background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+overflow:hidden;transition:transform .3s,border-color .3s;
+}
+.show-card:hover{transform:translateY(-6px);border-color:rgba(56,189,248,.4)}
+.show-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0d1118}
+.show-thumb svg{width:100%;height:100%}
+.show-thumb .dur{
+position:absolute;bottom:8px;right:8px;background:rgba(10,12,16,.82);
+font-size:11px;padding:2px 8px;border-radius:6px;color:var(--sub);font-family:monospace;
+}
+.show-thumb .ep{
+position:absolute;top:8px;left:8px;background:var(--accent);
+font-size:11px;padding:2px 9px;border-radius:6px;color:#fff;font-weight:700;
+}
+.show-body{padding:18px 18px 20px}
+.show-body h3{font-size:16px;margin-bottom:8px;line-height:1.35}
+.show-body .meta{display:flex;justify-content:space-between;font-size:12.5px;color:var(--sub)}
+.show-body .meta .v{color:var(--cool)}
+
+/* ---------- VOICES / COMMENT ---------- */
+.voices{background:var(--bg2)}
+.v-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.v-card{
+background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+padding:26px;display:flex;gap:16px;
+transition:border-color .3s,transform .3s;
+}
+.v-card:hover{border-color:rgba(255,176,58,.4);transform:translateY(-4px)}
+.avatar{
+width:48px;height:48px;border-radius:50%;flex-shrink:0;
+display:grid;place-items:center;font-weight:800;font-size:18px;color:#0a0c10;
+}
+.v-card .v-name{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.v-card .v-name strong{font-size:15px}
+.v-card .v-name .badge{
+font-size:10.5px;padding:1px 8px;border-radius:99px;
+background:rgba(56,189,248,.14);color:var(--cool);border:1px solid rgba(56,189,248,.28);
+}
+.v-card .v-name .badge.hot{background:rgba(255,59,92,.14);color:var(--accent);border-color:rgba(255,59,92,.28)}
+.v-card p{font-size:14.5px;color:var(--sub);line-height:1.75}
+.v-card .v-foot{margin-top:12px;font-size:12.5px;color:#5f6b7c;display:flex;gap:16px}
+.v-card .v-foot span{display:inline-flex;align-items:center;gap:5px}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.about-visual{position:relative}
+.about-screen{
+border-radius:18px;overflow:hidden;border:1px solid var(--line);
+background:linear-gradient(150deg,#1a2130,#0c1017);
+box-shadow:0 24px 60px rgba(0,0,0,.55);
+}
+.about-badge{
+position:absolute;left:-16px;top:28px;
+background:var(--accent);color:#fff;padding:9px 18px;border-radius:10px;
+font-size:13px;font-weight:700;box-shadow:0 10px 30px rgba(255,59,92,.4);
+}
+.about-text .tag{color:var(--cool)}
+.about-text h2{font-size:clamp(28px,3.6vw,40px);font-weight:800;letter-spacing:-1px;line-height:1.22;margin-bottom:20px}
+.about-text p{color:var(--sub);font-size:15.5px;margin-bottom:16px}
+.about-list{margin-top:26px;display:flex;flex-direction:column;gap:14px}
+.about-list li{
+list-style:none;display:flex;gap:12px;align-items:flex-start;
+font-size:15px;color:#c3ccd8;
+}
+.about-list li .ck{
+flex-shrink:0;width:22px;height:22px;border-radius:6px;
+background:rgba(56,189,248,.14);border:1px solid rgba(56,189,248,.3);
+display:grid;place-items:center;margin-top:2px;
+}
+
+/* ---------- NUMBERS ---------- */
+.numbers{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.num-item .n{font-size:clamp(32px,4.4vw,52px);font-weight:900;letter-spacing:-2px;color:var(--txt)}
+.num-item .n em{font-style:normal;color:var(--accent);font-size:.62em}
+.num-item .nl{font-size:14px;color:var(--sub);margin-top:6px}
+
+/* ---------- JOIN CTA ---------- */
+.cta-band{
+position:relative;overflow:hidden;
+background:
+radial-gradient(700px 360px at 20% 0%,rgba(255,59,92,.2),transparent 60%),
+radial-gradient(700px 360px at 85% 100%,rgba(56,189,248,.16),transparent 60%),
+var(--bg);
+border-top:1px solid var(--line);
+text-align:center;
+}
+.cta-band h2{font-size:clamp(30px,4.4vw,48px);font-weight:900;letter-spacing:-1.2px;margin-bottom:18px;line-height:1.18}
+.cta-band p{color:var(--sub);font-size:16px;max-width:560px;margin:0 auto 34px}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ---------- FOOTER ---------- */
+footer{background:#07090d;border-top:1px solid var(--line);padding:64px 0 34px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.foot-brand .logo{margin-bottom:16px}
+.foot-brand p{color:var(--sub);font-size:14px;max-width:300px;margin-bottom:20px}
+.socials{display:flex;gap:10px}
+.socials a{
+width:38px;height:38px;border-radius:10px;border:1px solid var(--line);
+display:grid;place-items:center;transition:all .25s;
+}
+.socials a:hover{background:var(--panel);border-color:var(--accent);transform:translateY(-3px)}
+.foot-col h4{font-size:14px;margin-bottom:16px;color:var(--txt);letter-spacing:.5px}
+.foot-col a{display:block;color:var(--sub);font-size:13.5px;margin-bottom:10px;transition:color .2s}
+.foot-col a:hover{color:var(--accent)}
+.foot-bottom{
+border-top:1px solid var(--line);padding-top:26px;
+display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;
+font-size:13px;color:#5f6b7c;
+}
+
+/* ---------- MODAL (simple) ---------- */
+.modal-mask{
+position:fixed;inset:0;background:rgba(4,6,9,.82);z-index:200;
+display:none;place-items:center;padding:24px;backdrop-filter:blur(6px);
+}
+.modal-mask.on{display:grid}
+.modal-box{
+width:100%;max-width:480px;background:var(--panel);border:1px solid var(--line);
+border-radius:18px;padding:36px;position:relative;
+box-shadow:0 30px 80px rgba(0,0,0,.7);
+}
+.modal-box h3{font-size:23px;margin-bottom:10px}
+.modal-box p{color:var(--sub);font-size:14.5px;margin-bottom:24px}
+.modal-box input{
+width:100%;padding:13px 16px;border-radius:10px;border:1px solid var(--line);
+background:var(--bg);color:var(--txt);font-size:15px;margin-bottom:14px;
+outline:none;transition:border-color .2s;
+}
+.modal-box input:focus{border-color:var(--accent)}
+.modal-box button{width:100%;justify-content:center}
+.modal-close{
+position:absolute;top:16px;right:18px;font-size:22px;color:var(--sub);
+cursor:pointer;line-height:1;transition:color .2s;
+}
+.modal-close:hover{color:var(--accent)}
+.toast{
+position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(120%);
+background:var(--accent);color:#fff;padding:12px 26px;border-radius:99px;
+font-size:14px;font-weight:600;z-index:300;transition:transform .35s;box-shadow:0 10px 30px rgba(255,59,92,.4);
+}
+.toast.on{transform:translateX(-50%) translateY(0)}
+
+/* ---------- REVEAL ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:980px){
+.hero-grid,.about-grid{grid-template-columns:1fr;gap:44px}
+.features .f-grid{grid-template-columns:1fr 1fr}
+.shows-grid{grid-template-columns:1fr 1fr}
+.num-grid{grid-template-columns:1fr 1fr;gap:34px}
+.foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+.nav-links{display:none}
+.burger{display:flex}
+.hero{padding:120px 0 70px}
+.features .f-grid,.shows-grid,.v-grid{grid-template-columns:1fr}
+.nav-cta{display:none}
+.hero-stats{gap:28px}
+section{padding:70px 0}
+.foot-grid{grid-template-columns:1fr 1fr;gap:30px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="logo">
+      <span class="mark">怼</span>
+      男生78怒怼生91
+    </a>
+    <nav class="nav-links">
+      <a href="#features">锐评引擎</a>
+      <a href="#shows">正在播</a>
+      <a href="#voices">现场声量</a>
+      <a href="#about">品牌故事</a>
+    </nav>
+    <a href="#join" class="nav-cta">加入直播</a>
+    <div class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span>锐评短视频 · 观点直给</div>
+      <h1 class="brand">男生78怒怼生91</h1>
+      <p class="lead">
+        一个不绕弯、不端着的视频品牌。我们用镜头收录年轻人的真话，
+        把每一次“怒怼”变成值得讨论的观点，让锋利也有温度，让表达回归现场。
+      </p>
+      <div class="hero-actions">
+        <a href="#join" class="btn btn-primary">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/></svg>
+          立即加入
+        </a>
+        <a href="#shows" class="btn btn-ghost">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M10 9l5 3-5 3V9z" fill="currentColor" stroke="none"/></svg>
+          查看节目
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="s"><div class="num">2.4<em>亿</em></div><div class="lbl">累计播放</div></div>
+        <div class="s"><div class="num">380<em>万</em></div><div class="lbl">社区关注</div></div>
+        <div class="s"><div class="num">1600<em>+</em></div><div class="lbl">入驻创作者</div></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="screen">
+        <div class="live-tag"><i></i> 直播中 · 观点现场</div>
+        <svg class="screen-svg" viewBox="0 0 400 340" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#232c3d"/>
+              <stop offset="1" stop-color="#10141c"/>
+            </linearGradient>
+            <linearGradient id="hg2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ff3b5c" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#ffb03a" stop-opacity=".55"/>
+            </linearGradient>
+            <linearGradient id="hg3" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#38bdf8" stop-opacity=".5"/>
+              <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="340" fill="url(#hg1)"/>
+          <circle cx="300" cy="70" r="120" fill="url(#hg3)"/>
+          <circle cx="90" cy="270" r="140" fill="url(#hg2)" opacity=".18"/>
+          <!-- 抽象人物剪影 -->
+          <g opacity=".92">
+            <circle cx="200" cy="150" r="46" fill="#ff3b5c" opacity=".28"/>
+            <circle cx="200" cy="150" r="30" fill="#ffb03a" opacity=".5"/>
+            <path d="M130 320 q70 -90 140 0 z" fill="#232c3d" opacity=".9"/>
+          </g>
+          <!-- 对话气泡 -->
+          <g transform="translate(56,60)">
+            <rect x="0" y="0" width="120" height="52" rx="14" fill="#ff3b5c" opacity=".92"/>
+            <path d="M28 52 l0 14 l16 -14 z" fill="#ff3b5c" opacity=".92"/>
+            <rect x="16" y="16" width="66" height="5" rx="2.5" fill="#fff" opacity=".85"/>
+            <rect x="16" y="29" width="88" height="5" rx="2.5" fill="#fff" opacity=".55"/>
+          </g>
+          <g transform="translate(224,196)">
+            <rect x="0" y="0" width="128" height="56" rx="14" fill="#232c3d" stroke="#38bdf8" stroke-opacity=".5"/>
+            <path d="M96 56 l0 15 l-16 -15 z" fill="#232c3d" stroke="#38bdf8" stroke-opacity=".5"/>
+            <rect x="16" y="16" width="78" height="5" rx="2.5" fill="#38bdf8" opacity=".9"/>
+            <rect x="16" y="30" width="58" height="5" rx="2.5" fill="#8b97a8" opacity=".7"/>
+          </g>
+          <!-- 波形 -->
+          <g transform="translate(40,290)" opacity=".8">
+            <rect x="0" y="0" width="4" height="14" rx="2" fill="#ff3b5c"/>
+            <rect x="10" y="-6" width="4" height="26" rx="2" fill="#ff3b5c" opacity=".7"/>
+            <rect x="20" y="2" width="4" height="10" rx="2" fill="#ffb03a"/>
+            <rect x="30" y="-10" width="4" height="34" rx="2" fill="#ff3b5c" opacity=".85"/>
+            <rect x="40" y="-2" width="4" height="18" rx="2" fill="#38bdf8" opacity=".8"/>
+            <rect x="50" y="-8" width="4" height="30" rx="2" fill="#ffb03a" opacity=".7"/>
+            <rect x="60" y="4" width="4" height="8" rx="2" fill="#8b97a8"/>
+          </g>
+        </svg>
+        <div class="play-badge">
+          <svg viewBox="0 0 24 24" fill="#0a0c10"><polygon points="7 4 21 12 7 20 7 4"/></svg>
+        </div>
+        <div class="time-code">LIVE · 01:48:22</div>
+      </div>
+      <div class="floating-card">
+        <div class="fc-ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4M7 6v12M11 3v18M15 7v10M19 5v14"/></svg>
+        </div>
+        <div class="fc-txt">
+          <strong>弹幕实时千条</strong>
+          <span>观点正在被接力</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>敢说·真话现场</span>
+    <span>犀利·但不伤人</span>
+    <span>年轻人的态度广场</span>
+    <span>每一个视角都值得被听见</span>
+    <span>敢说·真话现场</span>
+    <span>犀利·但不伤人</span>
+    <span>年轻人的态度广场</span>
+    <span>每一个视角都值得被听见</span>
+  </div>
+</div>
+
+<!-- ============ FEATURES ============ -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="tag">Brand Engine · 品牌引擎</span>
+      <h2>让观点拥有形状的方式</h2>
+      <p>从选题到成片，我们把“怒怼”拆成一整套可复用的内容方法论，让每一次表达都足够清晰、足够有力。</p>
+    </div>
+    <div class="f-grid">
+      <div class="f-card reveal">
+        <div class="f-ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ff3b5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </div>
+        <h3>三秒立场的开场</h3>
+        <p>拒绝温吞铺垫。每一个视频都在前三秒给出核心态度，让信息在信息流里第一时间被抓住。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffb03a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+        </div>
+        <h3>脚本的锋利与分寸</h3>
+        <p>怒怼不是失礼。我们的编导团队用清单化流程打磨每一句台词，让尖锐落点清晰，也让边界感被尊重。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>实时互动的现场</h3>
+        <p>弹幕、连麦、投票构成第二现场。观众不是看客，而是怒怼内容的共同作者，观点在互动中被反复打磨。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ff3b5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>创作者成长路径</h3>
+        <p>从素人到签约作者，我们提供选题库、拍摄模板与流量扶持，让每一个有观点的人都能被看见。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffb03a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        </div>
+        <h3>数据驱动的复盘</h3>
+        <p>完播、互动、情绪曲线全程可视化。每条内容都有一份复盘报告，让下一次表达更精准、更有回响。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>内容安全底座</h3>
+        <p>审核、申诉、分级提示三线并行。我们相信表达应当自由，也应当有责任、有边界、有互相尊重。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOWS ============ -->
+<section id="shows">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Now Streaming · 正在播</span>
+      <h2>本周上新的四档节目</h2>
+      <p>从犀利访谈到底层观察，男生78怒怼生91的镜头始终朝向真实生活，记录那些值得被认真讨论的瞬间。</p>
+    </div>
+    <div class="shows-grid">
+      <article class="show-card reveal">
+        <div class="show-thumb">
+          <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="st1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1520"/><stop offset="1" stop-color="#10141c"/></linearGradient></defs>
+            <rect width="320" height="200" fill="url(#st1)"/>
+            <circle cx="220" cy="70" r="60" fill="#ff3b5c" opacity=".2"/>
+            <rect x="30" y="120" width="120" height="10" rx="5" fill="#ff3b5c" opacity=".9"/>
+            <rect x="30" y="142" width="80" height="8" rx="4" fill="#8b97a8" opacity=".6"/>
+            <polygon points="240,150 240,90 290,120" fill="#ffb03a" opacity=".85"/>
+            <circle cx="60" cy="60" r="14" fill="#38bdf8" opacity=".6"/>
+          </svg>
+          <span class="ep">EP.07</span>
+          <span class="dur">18:42</span>
+        </div>
+        <div class="show-body">
+          <h3>怒怼一周热点，认真聊聊</h3>
+          <div class="meta"><span>锐评访谈</span><span class="v">⟡ 128万</span></div>
+        </div>
+      </article>
+
+      <article class="show-card reveal">
+        <div class="show-thumb">
+          <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="st2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#12222c"/><stop offset="1" stop-color="#10141c"/></linearGradient></defs>
+            <rect width="320" height="200" fill="url(#st2)"/>
+            <circle cx="90" cy="90" r="70" fill="#38bdf8" opacity=".16"/>
+            <path d="M40 150 L110 90 L160 130 L240 60" stroke="#38bdf8" stroke-width="3" fill="none" opacity=".8"/>
+            <circle cx="110" cy="90" r="6" fill="#38bdf8"/>
+            <circle cx="160" cy="130" r="6" fill="#ffb03a"/>
+            <circle cx="240" cy="60" r="6" fill="#ff3b5c"/>
+          </svg>
+          <span class="ep">EP.12</span>
+          <span class="dur">24:05</span>
+        </div>
+        <div class="show-body">
+          <h3>年轻人为什么不再解释</h3>
+          <div class="meta"><span>观点观察</span><span class="v">⟡ 96万</span></div>
+        </div>
+      </article>
+
+      <article class="show-card reveal">
+        <div class="show-thumb">
+          <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="st3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#251d10"/><stop offset="1" stop-color="#10141c"/></linearGradient></defs>
+            <rect width="320" height="200" fill="url(#st3)"/>
+            <rect x="40" y="60" width="60" height="80" rx="8" fill="#ffb03a" opacity=".35"/>
+            <rect x="120" y="80" width="60" height="60" rx="8" fill="#ff3b5c" opacity=".4"/>
+            <rect x="200" y="46" width="60" height="94" rx="8" fill="#38bdf8" opacity=".3"/>
+            <circle cx="70" cy="100" r="10" fill="#ffb03a"/>
+            <circle cx="150" cy="110" r="10" fill="#ff3b5c"/>
+            <circle cx="230" cy="90" r="10" fill="#38bdf8"/>
+          </svg>
+          <span class="ep">EP.03</span>
+          <span class="dur">12:30</span>
+        </div>
+        <div class="show-body">
+          <h3>一次不设防的街头对话</h3>
+          <div class="meta"><span>街采实录</span><span class="v">⟡ 74万</span></div>
+        </div>
+      </article>
+
+      <article class="show-card reveal">
+        <div class="show-thumb">
+          <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="st4" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1526"/><stop offset="1" stop-color="#10141c"/></linearGradient></defs>
+            <rect width="320" height="200" fill="url(#st4)"/>
+            <circle cx="160" cy="100" r="66" fill="none" stroke="#ff3b5c" stroke-width="2" opacity=".5"/>
+            <circle cx="160" cy="100" r="44" fill="none" stroke="#ffb03a" stroke-width="2" opacity=".6"/>
+            <circle cx="160" cy="100" r="22" fill="#ff3b5c" opacity=".8"/>
+            <rect x="30" y="30" width="40" height="6" rx="3" fill="#8b97a8" opacity=".5"/>
+            <rect x="250" y="164" width="40" height="6" rx="3" fill="#8b97a8" opacity=".5"/>
+          </svg>
+          <span class="ep">EP.09</span>
+          <span class="dur">31:18</span>
+        </div>
+        <div class="show-body">
+          <h3>把争论放到桌上，慢慢谈</h3>
+          <div class="meta"><span>圆桌对谈</span><span class="v">⟡ 153万</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VOICES ============ -->
+<section class="voices" id="voices">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Community · 现场声量</span>
+      <h2>评论区，是第二片现场</h2>
+      <p>来自男生78怒怼生91社区的真实声音。观点在碰撞里变得具体，讨论在克制中变得长久。</p>
+    </div>
+    <div class="v-grid">
+      <div class="v-card reveal">
+        <div class="avatar" style="background:linear-gradient(135deg,#ff3b5c,#ffb03a)">程</div>
+        <div>
+          <div class="v-name"><strong>程野的观察</strong><span class="badge hot">热门观点</span></div>
+          <p>“怒怼不是喊得大声，而是把话说到点子上。看这档节目最大的感受，是它允许别人反驳自己，然后认真听完。”</p>
+          <div class="v-foot"><span>♡ 2.3万</span><span>◈ 486 回复</span></div>
+        </div>
+      </div>
+      <div class="v-card reveal">
+        <div class="avatar" style="background:linear-gradient(135deg,#38bdf8,#7dd3fc)">林</div>
+        <div>
+          <div class="v-name"><strong>林间小满</strong><span class="badge">活跃观众</span></div>
+          <p>“第一次在短视频里看到把不同意见并排摆出来。它没有急着说服我，而是让我自己想一想，这种体验很难得。”</p>
+          <div class="v-foot"><span>♡ 1.7万</span><span>◈ 312 回复</span></div>
+        </div>
+      </div>
+      <div class="v-card reveal">
+        <div class="avatar" style="background:linear-gradient(135deg,#ffb03a,#ff3b5c)">阿</div>
+        <div>
+          <div class="v-name"><strong>阿枝不熬夜</strong><span class="badge">创作新星</span></div>
+          <p>“从观众到投稿，只花了一个月。选题库给了我勇气，也给了我方法。原来表达这件事，是可以练习的。”</p>
+          <div class="v-foot"><span>♡ 3.1万</span><span>◈ 720 回复</span></div>
+        </div>
+      </div>
+      <div class="v-card reveal">
+        <div class="avatar" style="background:linear-gradient(135deg,#a78bfa,#38bdf8)">周</div>
+        <div>
+          <div class="v-name"><strong>周舟在路上</strong><span class="badge hot">高赞</span></div>
+          <p>“最有意思的是它的弹幕现场感，你在评论里说一句，下一秒就有人接住。像是一群人围着一张桌子聊天。”</p>
+          <div class="v-foot"><span>♡ 2.8万</span><span>◈ 559 回复</span></div>
+        </div>
+      </div>
+      <div class="v-card reveal">
+        <div class="avatar" style="background:linear-gradient(135deg,#34d399,#38bdf8)">许</div>
+        <div>
+          <div class="v-name"><strong>许一诺</strong><span class="badge">长期关注</span></div>
+          <p>“它的锐评有分寸，不拿别人的生活开玩笑，这点很看重。犀利和克制其实可以同时存在。”</p>
+          <div class="v-foot"><span>♡ 1.4万</span><span>◈ 268 回复</span></div>
+        </div>
+      </div>
+      <div class="v-card reveal">
+        <div class="avatar" style="background:linear-gradient(135deg,#f472b6,#ffb03a)">苏</div>
+        <div>
+          <div class="v-name"><strong>苏打气泡</strong><span class="badge">内容共创</span></div>
+          <p>“每周五晚的直播像一种固定仪式。观点不一定都对，但那种认真讨论的气氛，会让人想一直留下来。”</p>
+          <div class="v-foot"><span>♡ 2.0万</span><span>◈ 401 回复</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual reveal">
+      <div class="about-screen">
+        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1c2331"/>
+              <stop offset="1" stop-color="#0c1017"/>
+            </linearGradient>
+            <linearGradient id="ag2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff3b5c" stop-opacity=".85"/>
+              <stop offset="1" stop-color="#ffb03a" stop-opacity=".7"/>
+            </linearGradient>
+          </defs>
+          <rect width="480" height="380" fill="url(#ag)"/>
+          <circle cx="380" cy="90" r="130" fill="#ff3b5c" opacity=".12"/>
+          <circle cx="90" cy="300" r="120" fill="#38bdf8" opacity=".1"/>
+          <!-- 环形 -->
+          <circle cx="240" cy="190" r="96" fill="none" stroke="#2b3546" stroke-width="20"/>
+          <circle cx="240" cy="190" r="96" fill="none" stroke="url(#ag2)" stroke-width="20"
+                  stroke-dasharray="420 604" stroke-linecap="round" transform="rotate(-90 240 190)"/>
+          <text x="240" y="183" text-anchor="middle" fill="#e6ebf2" font-size="34" font-weight="800" font-family="sans-serif">78%</text>
+          <text x="240" y="210" text-anchor="middle" fill="#8b97a8" font-size="13" font-family="sans-serif">观众会看到结尾</text>
+          <!-- 卡片 -->
+          <g transform="translate(44,44)">
+            <rect width="132" height="54" rx="11" fill="#161b24" stroke="#232b38"/>
+            <circle cx="26" cy="27" r="9" fill="#ff3b5c" opacity=".85"/>
+            <rect x="44" y="20" width="66" height="5" rx="2.5" fill="#e6ebf2" opacity=".8"/>
+            <rect x="44" y="32" width="46" height="4" rx="2" fill="#8b97a8" opacity=".6"/>
+          </g>
+          <g transform="translate(300,268)">
+            <rect width="132" height="54" rx="11" fill="#161b24" stroke="#232b38"/>
+            <circle cx="26" cy="27" r="9" fill="#38bdf8" opacity=".85"/>
+            <rect x="44" y="20" width="66" height="5" rx="2.5" fill="#e6ebf2" opacity=".8"/>
+            <rect x="44" y="32" width="46" height="4" rx="2" fill="#8b97a8" opacity=".6"/>
+          </g>
+        </svg>
+      </div>
+      <div class="about-badge">品牌成立于 2019</div>
+    </div>
+    <div class="about-text reveal">
+      <span class="tag">Brand Story · 品牌故事</span>
+      <h2>我们相信，认真讨论本身就是一个作品</h2>
+      <p>男生78怒怼生91诞生于一次深夜的争论。几个人围着一张小桌，为一句被误解的话反复解释，最后发现：真正被需要的不是胜负，而是一个能好好说话的地方。</p>
+      <p>于是我们把那间小桌搬进了镜头里。不做居高临下的评判，只做把不同声音摆到一起的现场。锋利依旧，但始终把人和人的感受放在前面。</p>
+      <ul class="about-list">
+        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>以真实生活为素材，拒绝表演式的对立</li>
+        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>支持创作者长期成长，而非一次性爆款</li>
+        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>让讨论有边界，也让每个观点有回音</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NUMBERS ============ -->
+<section class="numbers">
+  <div class="wrap">
+    <div class="num-grid">
+      <div class="num-item reveal"><div class="n">2.4<em>亿</em></div><div class="nl">全平台累计播放</div></div>
+      <div class="num-item reveal"><div class="n">380<em>万</em></div><div class="nl">社区活跃用户</div></div>
+      <div class="num-item reveal"><div class="n">1600<em>+</em></div><div class="nl">入驻内容创作者</div></div>
+      <div class="num-item reveal"><div class="n">98<em>%</em></div><div class="nl">观众满意度</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band" id="join">
+  <div class="wrap">
+    <h2 class="reveal">下一个在现场的，<br>可能就是你。</h2>
+    <p class="reveal">订阅男生78怒怼生91的直播提醒，或者把你的观点写成脚本投递给我们。这里永远留着一个位置给认真说话的人。</p>
+    <div class="cta-actions reveal">
+      <button class="btn btn-primary" id="openModal">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        订阅直播提醒
+      </button>
+      <a href="#shows" class="btn btn-ghost">先看看节目</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="logo">
+          <span class="mark">怼</span>
+          男生78怒怼生91
+        </a>
+        <p>锐评短视频品牌。把真话放在镜头前，把观点留在人群里。</p>
+        <div class="socials">
+          <a href="#" aria-label="视频号"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b97a8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><polygon points="10 9 15 12 10 15" fill="#8b97a8" stroke="none"/></svg></a>
+          <a href="#" aria-label="社区"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b97a8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.4 8.4 0 0 1-3.8-.9L3 21l2-5.2A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg></a>
+          <a href="#" aria-label="播客"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b97a8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7v6a7 7 0 0 0 14 0V9a7 7 0 0 0-7-7z"/><path d="M12 9v9"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>内容</h4>
+        <a href="#shows">正在播</a>
+        <a href="#shows">往期精选</a>
+        <a href="#voices">社区热评</a>
+        <a href="#about">品牌故事</a>
+      </div>
+      <div class="foot-col">
+        <h4>参与</h4>
+        <a href="#join">投稿入口</a>
+        <a href="#join">创作者计划</a>
+        <a href="#join">直播预约</a>
+        <a href="#voices">社群加入</a>
+      </div>
+      <div class="foot-col">
+        <h4>关于</h4>
+        <a href="#about">团队介绍</a>
+        <a href="#">商务合作</a>
+        <a href="#">内容规范</a>
+        <a href="#">联系我们</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 男生78怒怼生91 · 版权所有</span>
+      <span>观点有边界 · 表达有温度</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODAL ============ -->
+<div class="modal-mask" id="modalMask">
+  <div class="modal-box">
+    <span class="modal-close" id="closeModal">×</span>
+    <h3>订阅直播提醒</h3>
+    <p>留下你的联系方式，开播前我们会第一时间通知你，不错过任何一场现场。</p>
+    <input type="text" id="subName" placeholder="你的昵称" autocomplete="off">
+    <input type="email" id="subMail" placeholder="邮箱地址" autocomplete="off">
+    <button class="btn btn-primary" id="submitSub">确认订阅</button>
+  </div>
+</div>
+<div class="toast" id="toast">订阅成功，开播见！</div>
+
+<script>
+(function(){
+  // mobile menu
+  var burger = document.getElementById('burger');
+  var navLinks = document.querySelector('.nav-links');
+  if(burger){
+    burger.addEventListener('click', function(){
+      var shown = navLinks.style.display === 'flex';
+      navLinks.style.display = shown ? '' : 'flex';
+      navLinks.style.position = 'absolute';
+      navLinks.style.top = '68px';
+      navLinks.style.left = '0';
+      navLinks.style.right = '0';
+      navLinks.style.flexDirection = 'column';
+      navLinks.style.background = 'rgba(16,20,28,.98)';
+      navLinks.style.padding = '20px 24px';
+      navLinks.style.gap = '18px';
+      navLinks.style.borderBottom = '1px solid #232b38';
+    });
+  }
+
+  // nav shrink shadow
+  var nav = document.querySelector('header.nav');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 24){
+      nav.style.boxShadow = '0 8px 30px rgba(0,0,0,.45)';
+    }else{
+      nav.style.boxShadow = 'none';
+    }
+  });
+
+  // reveal on scroll
+  var reveals = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:0.12});
+  reveals.forEach(function(el,i){
+    el.style.transitionDelay = (i % 4) * 0.06 + 's';
+    io.observe(el);
+  });
+
+  // modal
+  var mask = document.getElementById('modalMask');
+  var openBtn = document.getElementById('openModal');
+  var closeBtn = document.getElementById('closeModal');
+  var submit = document.getElementById('submitSub');
+  var toast = document.getElementById('toast');
+
+  function openModal(){
+    mask.classList.add('on');
+    document.getElementById('subName').focus();
+  }
+  function closeModal(){
+    mask.classList.remove('on');
+  }
+  if(openBtn) openBtn.addEventListener('click', openModal);
+  if(closeBtn) closeBtn.addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){
+    if(e.target === mask) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  if(submit){
+    submit.addEventListener('click', function(){
+      var name = document.getElementById('subName').value.trim();
+      var mail = document.getElementById('subMail').value.trim();
+      if(!name || !mail || mail.indexOf('@') < 0){
+        toast.textContent = '请填写昵称与有效邮箱';
+        toast.style.background = '#ff3b5c';
+        toast.classList.add('on');
+        setTimeout(function(){toast.classList.remove('on');},2200);
+        return;
+      }
+      closeModal();
+      toast.textContent = '订阅成功，开播见，' + name + '！';
+      toast.style.background = '#ff3b5c';
+      toast.classList.add('on');
+      setTimeout(function(){toast.classList.remove('on');},2600);
+    });
+  }
+
+  // smooth anchor fallback for older browsers
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length > 1){
+        var target = document.querySelector(id);
+        if(target){
+          e.preventDefault();
+          var top = target.getBoundingClientRect().top + window.pageYOffset - 68;
+          window.scrollTo({top:top, behavior:'smooth'});
+        }
+      }
+    });
+  });
+
+  // play badge demo interaction
+  var badge = document.querySelector('.play-badge');
+  if(badge){
+    badge.addEventListener('click', function(){
+      toast.textContent = '直播画面加载中…观点马上到场';
+      toast.classList.add('on');
+      setTimeout(function(){toast.classList.remove('on');},2000);
+    });
+  }
+})();
+</script>
+</body>
+          </html>
